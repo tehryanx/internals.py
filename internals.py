@@ -17,7 +17,7 @@ def get_ip(host):
 
 def strip_prot(hostname):
 	# remove protocol handler
-	return hostname.split("//")[1:] if "//" in hostname else hostname
+	return hostname.split("//")[1] if "//" in hostname else hostname
 
 hosts = read_in()
 
